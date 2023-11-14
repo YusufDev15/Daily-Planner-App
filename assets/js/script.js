@@ -10,11 +10,15 @@ $(document).ready(function () {
     //find the current hour
     var currentHour = dayjs().hour();
 
-    //loop over each hour
+    //iterate over each element with the class "time-block"
     timeBlocks.each(function () {
       //retrieve the value of the 'id' attribute of the timeblock element using jquery attr
       //split the value of the 'id' attribute into an array of substrings
       var eachHour = parseInt($(this).attr("id").split("-")[1]); //retrieve the second element after splitting
+      //get from local storage, textEntry
+      var textEntry = localStorage.getItem(eachHour);
+      //set with the class description
+      $(this).find(".description").val(textEntry);
       //compare eachHour and currentHour and assign the right class
       if (eachHour < currentHour) {
         $(this).find(".description").addClass("past");
@@ -26,4 +30,13 @@ $(document).ready(function () {
     });
   }
   everyHour();
+  //eventListner on the savebtn class when clicked will save the key and value
+  $(".saveBtn").on("click", function () {
+    //Key
+    var key = $(this).parent().attr("id").split("-")[1];
+    //Value
+    var value = $(this).parent().find(".description").val();
+    //Save Key and Value to Local Storage
+    localStorage.setItem(key, value);
+  });
 });

@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -30,12 +30,12 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      <!-- give this div a class of time-block so i can match it in the css styles sheet, and an id using the hour number-->
+      <!-- give the div a class of time-block so i can match it in the css styles sheet, and an id using the hour number-->
       <div id="hour-9" class="row time-block">
         <div class="col-1 hour">9:00 AM</div>
         <textarea class="col-10 description"></textarea>
         <button class="btn saveBtn col-1">
-          <span class="fa fa-floppy-o" aria-hidden="true"></span>
+          <i class="fa fa-floppy-o" aria-hidden="true"></i>
         </button>
       </div>
       <div id="hour-10" class="row time-block">
@@ -105,6 +105,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
-    <script src="script.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
