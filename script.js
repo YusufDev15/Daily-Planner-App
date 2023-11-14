@@ -11,8 +11,10 @@ $(document).ready(function () {
     //find the current hour
     var currentHour = dayjs().hour();
     //loop over each hour
-    timeBlock.each(function () {
-      var eachHour = timeBlock.attr("id").split(" ")[1];
-    });
+    function timeBlock() {
+        //retrieve the value of the 'id' attribute of the timeblock element using jquery attr 
+        //split the value of the 'id' attribute into an array of substrings
+      var eachHour = timeBlock.attr("id").split("-")[1];
+    };
   }
 });
