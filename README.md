@@ -11,7 +11,7 @@ This app will run in the browser using HTML, CSS, JavaScript and Jquery.
     
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](./assets/images/screencapture-file-C-Users-Yusuf-OneDrive-Desktop-class-Challenges-Daily-Planner-App-index-html-2023-11-14-23_12_42.png)
 
 
 ## Deployment
@@ -20,6 +20,8 @@ To deploy this project run
 
 https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js
 https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js
+
+website - https://yusufdev15.github.io/Daily-Planner-App/
 
 
 ## Credits
